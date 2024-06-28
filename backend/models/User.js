@@ -16,6 +16,18 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  github: {
+    type: String,
+  },
+  linkedin: {
+    type: String,
+  },
+  contactNo: {
+    type: String,
+  },
+  userImage: {
+    type: String,
+  },
 });
 
 // Hash password before saving

@@ -4,12 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const FormDetails = () => {
   const navigate = useNavigate();
-  const handleSubmit = () => {
-    navigate("/dbcards");
-  };
-  const scannnedProfiles = () => {
-    navigate("/scannedprofiles");
-  };
+
   const userview = () => {
     navigate("/userview");
   };

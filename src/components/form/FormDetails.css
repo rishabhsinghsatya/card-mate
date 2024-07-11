@@ -35,7 +35,7 @@ input {
 }
 
 input::placeholder {
-  color: black;
+  color: rgb(173, 170, 170);
 }
 
 button {

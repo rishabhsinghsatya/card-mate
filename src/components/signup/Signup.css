@@ -33,7 +33,7 @@
 }
 
 .signup-form input::placeholder {
-  color: #000;
+  color: rgb(173, 170, 170);
 }
 
 .signup-form input:focus {

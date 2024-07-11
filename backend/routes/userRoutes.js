@@ -10,7 +10,7 @@ import {
 
 const router = express.Router();
 
-router.post('/users', createUser);
+router.post('/users/register', createUser);
 router.post('/users/login', getUser);
 router.get('/users/:id', getUserFormData);
 router.put('/users/:id', updateUserFormData);

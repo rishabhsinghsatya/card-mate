@@ -1,0 +1,62 @@
+.blueprint-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.form-container {
+  width: 320px;
+  max-width: 280px;
+  padding: 30px;
+  background-color: black;
+  border-radius: 8px;
+  border: 1px solid yellow;
+  box-shadow: rgba(255, 223, 0, 0.25) 0px 50px 100px -20px,
+    rgba(255, 215, 0, 0.3) 0px 30px 60px -30px,
+    rgba(255, 255, 0, 0.35) 0px -2px 6px 0px inset;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid yellow;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+button {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: yellow;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid yellow;
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(255, 223, 0, 0.25) 0px 50px 100px -20px,
+    rgba(255, 215, 0, 0.3) 0px 30px 60px -30px,
+    rgba(255, 255, 0, 0.35) 0px -2px 6px 0px inset;
+}

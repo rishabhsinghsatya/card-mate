@@ -6,12 +6,14 @@ import DBCards from "./components/DBCards/DBCards";
 import ScannedProfiles from "./components/scanned profile/ScannedProfiles";
 import FriendList from "./components/friend list/FriendList";
 import UserView from "./components/user view/UserView";
+import LoginForm from "./components/signup/Login";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<SignUpForm />} />
+        <Route path="/loginform" element={<LoginForm/>} />
         <Route path="/detailsform" element={<FormDetails />} />
         <Route path="/dbcards" element={<DBCards />} />
         <Route path="/userview" element={<UserView />} />

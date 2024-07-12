@@ -34,11 +34,15 @@ const SignUpForm = () => {
         throw new Error("Failed to register user");
       }
 
-      navigate("/loginform");
+      navigate("/loginform", { state: { user: formData } });
     } catch (error) {
       console.error("Error:", error);
       // Handle error state or show error message
     }
+  };
+
+  const goToLogin = () => {
+    navigate("/loginform");
   };
 
   return (
@@ -68,7 +72,10 @@ const SignUpForm = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit">SIGNUP</button>
+        <button type="button" onClick={goToLogin}>
+          LOGIN
+        </button>
       </form>
     </div>
   );

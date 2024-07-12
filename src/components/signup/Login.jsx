@@ -33,8 +33,8 @@ const LoginForm = () => {
       if (!response.ok) {
         throw new Error("Invalid email or password");
       }
-
-      navigate("/detailsform");
+      const userData = await response.json();
+      navigate("/detailsform", { state: { user: userData } });
     } catch (error) {
       setError(error.message || "Something went wrong");
     }
@@ -59,7 +59,7 @@ const LoginForm = () => {
           onChange={handleChange}
           required
         />
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error-message">{error}</p>}
         <button type="submit">LOGIN</button>
       </form>
     </div>
